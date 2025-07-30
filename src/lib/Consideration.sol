@@ -105,7 +105,7 @@ contract Consideration is ConsiderationInterface, OrderCombiner {
          * @custom:name parameters
          */
         BasicOrderParameters calldata
-    ) external payable override returns (bool fulfilled) {
+    ) public payable virtual override returns (bool fulfilled) {
         // Validate and fulfill the basic order.
         fulfilled = _validateAndFulfillBasicOrder();
     }
@@ -144,7 +144,7 @@ contract Consideration is ConsiderationInterface, OrderCombiner {
          * @custom:name parameters
          */
         BasicOrderParameters calldata
-    ) external payable override returns (bool fulfilled) {
+    ) public payable virtual override returns (bool fulfilled) {
         // Validate and fulfill the basic order.
         fulfilled = _validateAndFulfillBasicOrder();
     }
@@ -177,7 +177,7 @@ contract Consideration is ConsiderationInterface, OrderCombiner {
          */
         Order calldata,
         bytes32 fulfillerConduitKey
-    ) external payable override returns (bool fulfilled) {
+    ) public payable virtual override returns (bool fulfilled) {
         // Convert order to "advanced" order, then validate and fulfill it.
         fulfilled = _validateAndFulfillAdvancedOrder(
             _toAdvancedOrderReturnType(_decodeOrderAsAdvancedOrder)(
@@ -243,7 +243,7 @@ contract Consideration is ConsiderationInterface, OrderCombiner {
         CriteriaResolver[] calldata,
         bytes32 fulfillerConduitKey,
         address recipient
-    ) external payable override returns (bool fulfilled) {
+    ) public payable virtual override returns (bool fulfilled) {
         // Validate and fulfill the order.
         fulfilled = _validateAndFulfillAdvancedOrder(
             _toAdvancedOrderReturnType(_decodeAdvancedOrder)(
@@ -328,8 +328,9 @@ contract Consideration is ConsiderationInterface, OrderCombiner {
         bytes32 fulfillerConduitKey,
         uint256 maximumFulfilled
     )
-        external
+        public
         payable
+        virtual 
         override
         returns (
             bool[] memory /* availableOrders */,
@@ -462,8 +463,9 @@ contract Consideration is ConsiderationInterface, OrderCombiner {
         address recipient,
         uint256 maximumFulfilled
     )
-        external
+        public
         payable
+        virtual 
         override
         returns (
             bool[] memory /* availableOrders */,
@@ -539,7 +541,7 @@ contract Consideration is ConsiderationInterface, OrderCombiner {
          * @custom:name fulfillments
          */
         Fulfillment[] calldata
-    ) external payable override returns (Execution[] memory /* executions */) {
+    ) public payable virtual override returns (Execution[] memory /* executions */) {
         // Convert to advanced, validate, and match orders using fulfillments.
         return
             _matchAdvancedOrders(
@@ -620,7 +622,7 @@ contract Consideration is ConsiderationInterface, OrderCombiner {
          */
         Fulfillment[] calldata,
         address recipient
-    ) external payable override returns (Execution[] memory /* executions */) {
+    ) public payable virtual override returns (Execution[] memory /* executions */) {
         // Validate and match the advanced orders using supplied fulfillments.
         return
             _matchAdvancedOrders(
