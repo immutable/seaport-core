@@ -3,7 +3,7 @@ pragma solidity ^0.8.24;
 
 import {
     ConsiderationEventsAndErrors
-} from "seaport-types/src/interfaces/ConsiderationEventsAndErrors.sol";
+} from "seaport-types-16/src/interfaces/ConsiderationEventsAndErrors.sol";
 
 import { ReentrancyGuard } from "./ReentrancyGuard.sol";
 
@@ -11,7 +11,7 @@ import {
     Counter_blockhash_shift,
     OneWord,
     TwoWords
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 /**
  * @title CounterManager

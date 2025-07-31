@@ -3,11 +3,11 @@ pragma solidity ^0.8.24;
 
 import {
     SeaportRouterInterface
-} from "seaport-types/src/interfaces/SeaportRouterInterface.sol";
+} from "seaport-types-16/src/interfaces/SeaportRouterInterface.sol";
 
 import {
     SeaportInterface
-} from "seaport-types/src/interfaces/SeaportInterface.sol";
+} from "seaport-types-16/src/interfaces/SeaportInterface.sol";
 
 import { ReentrancyGuard } from "../lib/ReentrancyGuard.sol";
 
@@ -16,7 +16,7 @@ import {
     CriteriaResolver,
     Execution,
     FulfillmentComponent
-} from "seaport-types/src/lib/ConsiderationStructs.sol";
+} from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 /**
  * @title  SeaportRouter

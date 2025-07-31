@@ -3,7 +3,7 @@ pragma solidity ^0.8.24;
 
 import {
     ConsiderationInterface
-} from "seaport-types/src/interfaces/ConsiderationInterface.sol";
+} from "seaport-types-16/src/interfaces/ConsiderationInterface.sol";
 
 import {
     AdvancedOrder,
@@ -14,14 +14,14 @@ import {
     FulfillmentComponent,
     Order,
     OrderComponents
-} from "seaport-types/src/lib/ConsiderationStructs.sol";
+} from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 import { OrderCombiner } from "./OrderCombiner.sol";
 
 import {
     CalldataStart,
     CalldataPointer
-} from "seaport-types/src/helpers/PointerLibraries.sol";
+} from "seaport-types-16/src/helpers/PointerLibraries.sol";
 
 import {
     Offset_fulfillAdvancedOrder_criteriaResolvers,
@@ -34,7 +34,7 @@ import {
     Offset_matchAdvancedOrders_fulfillments,
     Offset_matchOrders_fulfillments,
     OrderParameters_counter_offset
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 /**
  * @title Consideration

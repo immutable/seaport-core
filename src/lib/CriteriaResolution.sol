@@ -5,7 +5,7 @@ import {
     ItemType,
     OrderType,
     Side
-} from "seaport-types/src/lib/ConsiderationEnums.sol";
+} from "seaport-types-16/src/lib/ConsiderationEnums.sol";
 
 import {
     AdvancedOrder,
@@ -14,17 +14,17 @@ import {
     MemoryPointer,
     OfferItem,
     OrderParameters
-} from "seaport-types/src/lib/ConsiderationStructs.sol";
+} from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 import {
     _revertCriteriaNotEnabledForItem,
     _revertInvalidProof,
     _revertOrderCriteriaResolverOutOfRange
-} from "seaport-types/src/lib/ConsiderationErrors.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrors.sol";
 
 import {
     CriteriaResolutionErrors
-} from "seaport-types/src/interfaces/CriteriaResolutionErrors.sol";
+} from "seaport-types-16/src/interfaces/CriteriaResolutionErrors.sol";
 
 import {
     OneWord,
@@ -32,7 +32,7 @@ import {
     OrderParameters_consideration_head_offset,
     Selector_length,
     TwoWords
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 import {
     ConsiderationCriteriaResolverOutOfRange_err_selector,
@@ -43,7 +43,7 @@ import {
     UnresolvedConsiderationCriteria_error_orderIndex_ptr,
     UnresolvedConsiderationCriteria_error_selector,
     UnresolvedOfferCriteria_error_selector
-} from "seaport-types/src/lib/ConsiderationErrorConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrorConstants.sol";
 
 /**
  * @title CriteriaResolution

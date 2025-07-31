@@ -3,11 +3,11 @@ pragma solidity ^0.8.24;
 
 import {
     ConduitControllerInterface
-} from "seaport-types/src/interfaces/ConduitControllerInterface.sol";
+} from "seaport-types-16/src/interfaces/ConduitControllerInterface.sol";
 
 import {
     ConsiderationEventsAndErrors
-} from "seaport-types/src/interfaces/ConsiderationEventsAndErrors.sol";
+} from "seaport-types-16/src/interfaces/ConsiderationEventsAndErrors.sol";
 
 import {
     BulkOrder_Typehash_Height_One,
@@ -46,7 +46,7 @@ import {
     Slot0x80,
     ThreeWords,
     ZeroSlot
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 import { ConsiderationDecoder } from "./ConsiderationDecoder.sol";
 

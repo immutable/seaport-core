@@ -5,12 +5,12 @@ import {
     BasicOrderRouteType,
     ItemType,
     OrderType
-} from "seaport-types/src/lib/ConsiderationEnums.sol";
+} from "seaport-types-16/src/lib/ConsiderationEnums.sol";
 
 import {
     BasicOrderParameters,
     OrderStatus
-} from "seaport-types/src/lib/ConsiderationStructs.sol";
+} from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 import { OrderValidator } from "./OrderValidator.sol";
 
@@ -19,7 +19,7 @@ import {
     _revertInvalidMsgValue,
     _revertInvalidERC721TransferAmount,
     _revertUnusedItemParameters
-} from "seaport-types/src/lib/ConsiderationErrors.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrors.sol";
 
 import {
     AccumulatorDisarmed,
@@ -104,7 +104,7 @@ import {
     ThreeWords,
     TwoWords,
     ZeroSlot
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 import {
     Error_selector_offset,
@@ -118,11 +118,11 @@ import {
     MissingOriginalConsiderationItems_error_selector,
     UnusedItemParameters_error_length,
     UnusedItemParameters_error_selector
-} from "seaport-types/src/lib/ConsiderationErrorConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrorConstants.sol";
 
 import {
     CalldataPointer
-} from "seaport-types/src/helpers/PointerLibraries.sol";
+} from "seaport-types-16/src/helpers/PointerLibraries.sol";
 
 /**
  * @title BasicOrderFulfiller

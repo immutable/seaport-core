@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 import {
     ItemType,
     OrderType
-} from "seaport-types/src/lib/ConsiderationEnums.sol";
+} from "seaport-types-16/src/lib/ConsiderationEnums.sol";
 
 import {
     AdvancedOrder,
@@ -14,7 +14,7 @@ import {
     OrderParameters,
     ReceivedItem,
     SpentItem
-} from "seaport-types/src/lib/ConsiderationStructs.sol";
+} from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 import { BasicOrderFulfiller } from "./BasicOrderFulfiller.sol";
 
@@ -25,14 +25,14 @@ import { AmountDeriver } from "./AmountDeriver.sol";
 import {
     _revertInsufficientNativeTokensSupplied,
     _revertInvalidNativeOfferItem
-} from "seaport-types/src/lib/ConsiderationErrors.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrors.sol";
 
 import {
     AccumulatorDisarmed,
     ConsiderationItem_recipient_offset,
     ReceivedItem_amount_offset,
     ReceivedItem_recipient_offset
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 /**
  * @title OrderFulfiller

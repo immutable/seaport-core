@@ -5,7 +5,7 @@ import {
     Side,
     ItemType,
     OrderType
-} from "seaport-types/src/lib/ConsiderationEnums.sol";
+} from "seaport-types-16/src/lib/ConsiderationEnums.sol";
 
 import {
     AdvancedOrder,
@@ -17,7 +17,7 @@ import {
     OfferItem,
     OrderParameters,
     ReceivedItem
-} from "seaport-types/src/lib/ConsiderationStructs.sol";
+} from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 import { OrderFulfiller } from "./OrderFulfiller.sol";
 
@@ -27,13 +27,13 @@ import {
     _revertConsiderationNotMet,
     _revertInvalidNativeOfferItem,
     _revertNoSpecifiedOrdersAvailable
-} from "seaport-types/src/lib/ConsiderationErrors.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrors.sol";
 
 import {
     Error_selector_offset,
     InsufficientNativeTokensSupplied_error_selector,
     InsufficientNativeTokensSupplied_error_length
-} from "seaport-types/src/lib/ConsiderationErrorConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrorConstants.sol";
 
 import {
     AccumulatorDisarmed,
@@ -47,13 +47,13 @@ import {
     ReceivedItem_amount_offset,
     ReceivedItem_recipient_offset,
     TwoWords
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 import {
     MemoryPointer,
     MemoryPointerLib,
     ZeroSlotPtr
-} from "seaport-types/src/helpers/PointerLibraries.sol";
+} from "seaport-types-16/src/helpers/PointerLibraries.sol";
 
 /**
  * @title OrderCombiner

@@ -3,7 +3,7 @@ pragma solidity ^0.8.24;
 
 import {
     OrderParameters
-} from "seaport-types/src/lib/ConsiderationStructs.sol";
+} from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 import { ConsiderationBase } from "./ConsiderationBase.sol";
 
@@ -33,7 +33,7 @@ import {
     OrderParameters_counter_offset,
     OrderParameters_offer_head_offset,
     TwoWords
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 /**
  * @title GettersAndDerivers

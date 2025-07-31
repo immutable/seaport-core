@@ -3,7 +3,7 @@ pragma solidity ^0.8.24;
 
 import {
     SignatureVerificationErrors
-} from "seaport-types/src/interfaces/SignatureVerificationErrors.sol";
+} from "seaport-types-16/src/interfaces/SignatureVerificationErrors.sol";
 
 import { LowLevelHelpers } from "./LowLevelHelpers.sol";
 
@@ -23,7 +23,7 @@ import {
     MaxUint8,
     OneWord,
     Signature_lower_v
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 import {
     BadContractSignature_error_length,
@@ -36,7 +36,7 @@ import {
     InvalidSignature_error_selector,
     InvalidSigner_error_length,
     InvalidSigner_error_selector
-} from "seaport-types/src/lib/ConsiderationErrorConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrorConstants.sol";
 
 /**
  * @title SignatureVerification

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import { OrderType } from "seaport-types/src/lib/ConsiderationEnums.sol";
+import { OrderType } from "seaport-types-16/src/lib/ConsiderationEnums.sol";
 
 import {
     AdvancedOrder,
     BasicOrderParameters,
     OrderParameters
-} from "seaport-types/src/lib/ConsiderationStructs.sol";
+} from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 import {
     ZoneInteractionErrors
-} from "seaport-types/src/interfaces/ZoneInteractionErrors.sol";
+} from "seaport-types-16/src/interfaces/ZoneInteractionErrors.sol";
 
 import { LowLevelHelpers } from "./LowLevelHelpers.sol";
 
@@ -22,7 +22,7 @@ import {
     MemoryPointer,
     OffsetOrLengthMask,
     ZeroSlotPtr
-} from "seaport-types/src/helpers/PointerLibraries.sol";
+} from "seaport-types-16/src/helpers/PointerLibraries.sol";
 
 import {
     authorizeOrder_selector_offset,
@@ -33,7 +33,7 @@ import {
     OrderParameters_salt_offset,
     OrderParameters_zone_offset,
     validateOrder_selector_offset
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 import {
     Error_selector_offset,
@@ -41,7 +41,7 @@ import {
     InvalidRestrictedOrder_error_length,
     InvalidRestrictedOrder_error_orderHash_ptr,
     InvalidRestrictedOrder_error_selector
-} from "seaport-types/src/lib/ConsiderationErrorConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrorConstants.sol";
 
 /**
  * @title ZoneInteraction

@@ -3,18 +3,18 @@ pragma solidity ^0.8.14;
 
 import {
     ConduitInterface
-} from "seaport-types/src/interfaces/ConduitInterface.sol";
+} from "seaport-types-16/src/interfaces/ConduitInterface.sol";
 
 import {
     ConduitItemType
-} from "seaport-types/src/conduit/lib/ConduitEnums.sol";
+} from "seaport-types-16/src/conduit/lib/ConduitEnums.sol";
 
 import { TokenTransferrer } from "../lib/TokenTransferrer.sol";
 
 import {
     ConduitBatch1155Transfer,
     ConduitTransfer
-} from "seaport-types/src/conduit/lib/ConduitStructs.sol";
+} from "seaport-types-16/src/conduit/lib/ConduitStructs.sol";
 
 import {
     ChannelClosed_channel_ptr,
@@ -24,7 +24,7 @@ import {
     ChannelKey_channel_ptr,
     ChannelKey_length,
     ChannelKey_slot_ptr
-} from "seaport-types/src/conduit/lib/ConduitConstants.sol";
+} from "seaport-types-16/src/conduit/lib/ConduitConstants.sol";
 
 /**
  * @title Conduit

@@ -3,15 +3,15 @@ pragma solidity ^0.8.24;
 
 import {
     ConduitInterface
-} from "seaport-types/src/interfaces/ConduitInterface.sol";
+} from "seaport-types-16/src/interfaces/ConduitInterface.sol";
 
 import {
     ConduitItemType
-} from "seaport-types/src/conduit/lib/ConduitEnums.sol";
+} from "seaport-types-16/src/conduit/lib/ConduitEnums.sol";
 
-import { ItemType } from "seaport-types/src/lib/ConsiderationEnums.sol";
+import { ItemType } from "seaport-types-16/src/lib/ConsiderationEnums.sol";
 
-import { ReceivedItem } from "seaport-types/src/lib/ConsiderationStructs.sol";
+import { ReceivedItem } from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 import { Verifiers } from "./Verifiers.sol";
 
@@ -35,7 +35,7 @@ import {
     FreeMemoryPointerSlot,
     OneWord,
     TwoWords
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 import {
     Error_selector_offset,
@@ -43,14 +43,14 @@ import {
     NativeTokenTransferGenericFailure_error_amount_ptr,
     NativeTokenTransferGenericFailure_error_length,
     NativeTokenTransferGenericFailure_error_selector
-} from "seaport-types/src/lib/ConsiderationErrorConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrorConstants.sol";
 
 import {
     _revertInvalidCallToConduit,
     _revertInvalidConduit,
     _revertInvalidERC721TransferAmount,
     _revertUnusedItemParameters
-} from "seaport-types/src/lib/ConsiderationErrors.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrors.sol";
 
 /**
  * @title Executor

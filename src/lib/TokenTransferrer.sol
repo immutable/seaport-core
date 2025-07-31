@@ -77,15 +77,15 @@ import {
     TwoWords,
     TwoWordsShift,
     ZeroSlot
-} from "seaport-types/src/lib/TokenTransferrerConstants.sol";
+} from "seaport-types-16/src/lib/TokenTransferrerConstants.sol";
 
 import {
     TokenTransferrerErrors
-} from "seaport-types/src/interfaces/TokenTransferrerErrors.sol";
+} from "seaport-types-16/src/interfaces/TokenTransferrerErrors.sol";
 
 import {
     ConduitBatch1155Transfer
-} from "seaport-types/src/conduit/lib/ConduitStructs.sol";
+} from "seaport-types-16/src/conduit/lib/ConduitStructs.sol";
 
 /**
  * @title TokenTransferrer

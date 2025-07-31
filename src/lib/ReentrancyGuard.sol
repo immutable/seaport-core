@@ -3,14 +3,14 @@ pragma solidity ^0.8.24;
 
 import {
     ReentrancyErrors
-} from "seaport-types/src/interfaces/ReentrancyErrors.sol";
+} from "seaport-types-16/src/interfaces/ReentrancyErrors.sol";
 
 import { LowLevelHelpers } from "./LowLevelHelpers.sol";
 
 import {
     _revertInvalidMsgValue,
     _revertNoReentrantCalls
-} from "seaport-types/src/lib/ConsiderationErrors.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrors.sol";
 
 import {
     _ENTERED_AND_ACCEPTING_NATIVE_TOKENS_SSTORE,
@@ -24,7 +24,7 @@ import {
     _TLOAD_TEST_PAYLOAD,
     _TLOAD_TEST_PAYLOAD_OFFSET,
     _TLOAD_TEST_PAYLOAD_LENGTH
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 import {
     InvalidMsgValue_error_selector,
@@ -33,7 +33,7 @@ import {
     NoReentrantCalls_error_selector,
     NoReentrantCalls_error_length,
     Error_selector_offset
-} from "seaport-types/src/lib/ConsiderationErrorConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationErrorConstants.sol";
 
 /**
  * @title ReentrancyGuard

@@ -9,17 +9,17 @@ import {
     OneWord,
     OneWordShift,
     ThirtyOneBytes
-} from "seaport-types/src/lib/ConsiderationConstants.sol";
+} from "seaport-types-16/src/lib/ConsiderationConstants.sol";
 
 import {
     MemoryPointer,
     MemoryPointerLib
-} from "seaport-types/src/helpers/PointerLibraries.sol";
+} from "seaport-types-16/src/helpers/PointerLibraries.sol";
 
 import {
     AdvancedOrder,
     Execution
-} from "seaport-types/src/lib/ConsiderationStructs.sol";
+} from "seaport-types-16/src/lib/ConsiderationStructs.sol";
 
 /**
  * @title LowLevelHelpers
